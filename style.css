@@ -59,7 +59,7 @@ body {
 }
 
 /* ANIMATION RELATED STYLES */
-.header-logo span:hover{
+.header-logo span:hover {
     transform: rotateX(720deg);
     transition: 2s;
 }
@@ -126,8 +126,6 @@ body {
     border-radius: 1000px;
 
     position: absolute;
-    /* top: 100px;
-    left: 700px; */
     top: 40%;
     left: 60%;
     transform: translate(-50%, -50%);
@@ -147,8 +145,8 @@ body {
 }
 
 .hero-container-txt p {
-    font-size: 14px;
-    color: #ffffff60;
+    font-size: 16px;
+    color: #ffffff74;
     padding-bottom: 20px;
 }
 
@@ -245,7 +243,7 @@ body {
     padding: 40px;
 }
 
-.common-why-card img:hover{
+.common-why-card img:hover {
     transform: rotateY(360deg);
     transition: 2s ease-in-out;
 }
@@ -484,6 +482,18 @@ body {
         font-size: 45px;
     }
 
+    .hero-container-txt p {
+        max-width: 86%;
+        margin: 0 auto;
+    }
+
+    .hero-new {
+        position: absolute;
+        top: 40%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
+
     .why-cards {
         display: flex;
         flex-direction: column;
@@ -535,9 +545,9 @@ body {
 /*responsive for (max-width:576px) & (min-width:992px) devices */
 @media screen and (min-width:577px) and (max-width: 992px) {
     .header-container {
-            max-width: 90vw;
-            margin: 0 auto;
-        }
+        max-width: 90vw;
+        margin: 0 auto;
+    }
 
     .meet-container-host,
     .featured-cards {
@@ -562,8 +572,7 @@ body {
 
 /*responsive for (max-width:992px) devices */
 @media screen and (min-width: 992px) {
-    .featured-cards{
+    .featured-cards {
         justify-content: center;
     }
 }
-
