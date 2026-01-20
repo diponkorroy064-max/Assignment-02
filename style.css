@@ -19,6 +19,12 @@ body {
     border-radius: 10000px;
 }
 
+.common-button:hover {
+    background-image: linear-gradient(20deg, rgba(145, 0, 248, 1), rgba(251, 9, 180, 1), rgba(247, 233, 63, 1));
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
 .common-button i {
     font-size: 13px;
 }
@@ -31,6 +37,7 @@ body {
 .header-container {
     display: flex;
     justify-content: space-between;
+    /* background-color: #00FF88; */
     align-items: center;
     max-width: 80vw;
     margin: 0 auto;
@@ -63,8 +70,15 @@ body {
 
 .header-nav li a {
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
     color: #FFFFFF;
     font-weight: 400;
+}
+
+.header-container-small-menu {
+    color: #FFFFFF;
+    display: none;
 }
 
 
@@ -76,33 +90,22 @@ body {
     background-repeat: no-repeat;
 }
 
-.hero-container {
-    /* width: 36vw; */
-    /* margin: 0 auto; */
-    /* padding-top: 101px;
-    padding-bottom: 101px; */
-    /* margin-left: -50vw; */
-    position: relative;
-}
-
 .hero-first-img {
     position: absolute;
-    left: 38.2%;
-    top: 10%;
-}
-
-.hero-first-img img {
-    width: 85%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .hero-second-img {
     position: absolute;
-    top: 20%;
-    left: 45%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .hero-container-txt {
-    padding-top: 490px;
+    padding-top: 500px;
     padding-bottom: 100px;
     text-align: center;
 }
@@ -118,6 +121,12 @@ body {
     font-size: 14px;
     color: #ffffff60;
     padding-bottom: 20px;
+}
+
+.hero-container-btn {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 
@@ -138,11 +147,12 @@ body {
     font-size: 48px;
     font-weight: bold;
     color: #FFFFFF;
+    padding-bottom: 15px;
 }
 
 .about-container-txt p {
     font-size: 14px;
-    color: #FFFFFF;
+    color: #ffffffb0;
     line-height: 30px;
 }
 
@@ -209,11 +219,14 @@ body {
     font-size: 24px;
     color: #FFFFFF;
     font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .common-why-card p {
     font-size: 14px;
     font-weight: 500;
+    line-height: 24px;
     color: #ffffff9c;
 }
 
@@ -332,11 +345,10 @@ body {
     list-style-type: none;
 }
 
-.host-txt-nav li img {
-    max-width: 100%;
+.host-txt-nav li {
     border: 0.8px solid #533C72;
     border-radius: 50%;
-    padding: 10px;
+    padding: 10px 12px;
 }
 
 .host-txt h4 {
@@ -354,9 +366,7 @@ body {
 }
 
 
-/* footer related styles */
-/* #footer {} */
-
+/* footer section related styles */ 
 .footer-container {
     background-image: url('assets/footer-bg.png');
     background-position: center;
@@ -382,9 +392,11 @@ body {
 }
 
 .footer-cards {
+    max-width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -402,6 +414,72 @@ body {
 }
 
 .footer-copyright {
+    max-width: 80%;
+    margin: 0 auto;
     font-size: 16px;
-    color: #FAFAFA;
+    color: #fafafa7b;
+}
+
+
+/* resposive related styles */
+.hide {
+    display: none !important;
+}
+
+/* responsive (max-width:576px) related styles */
+@media screen and (max-width: 576px) {
+
+    .header-nav,
+    .header-button-container {
+        display: none;
+    }
+
+    .header-container-small-menu {
+        display: inline;
+    }
+
+    .hero-container-txt h2{
+        font-size: 45px;
+    }
+
+    .why-cards {
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-rows: repeat(1, 1fr); */
+    }
+
+    .featured-container h3{
+        font-size: 40px;
+    }
+
+    .meet-container h3{
+        font-size: 40px;
+    }
+
+    .meet-container-host,
+    .featured-cards {
+        flex-direction: column;
+    }
+
+    .about-container-cards,
+    .footer-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .host-txt{
+        text-align: center;
+    }
+
+    .host-txt-nav{
+        justify-content: center;
+    }
+
+    .footer-container {
+        background-size: contain;
+        background-color: #201142;
+    }
+
+    .footer-container h2{
+        font-size: 40px;
+    }
 }
