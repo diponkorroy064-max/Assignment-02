@@ -59,8 +59,8 @@ body {
 }
 
 /* ANIMATION RELATED STYLES */
-body span:hover{
-    transform: rotateX(360deg);
+.header-logo span:hover{
+    transform: rotateX(720deg);
     transition: 2s;
 }
 
@@ -414,6 +414,11 @@ body span:hover{
     text-align: center;
 }
 
+.footer-container span:hover {
+    transform: rotateX(720deg);
+    transition: 2s;
+}
+
 .footer-container h2 {
     font-size: 60px;
     color: #FFFFFF;
@@ -553,3 +558,12 @@ body span:hover{
         justify-content: center;
     }
 }
+
+
+/*responsive for (max-width:992px) devices */
+@media screen and (min-width: 992px) {
+    .featured-cards{
+        justify-content: center;
+    }
+}
+
