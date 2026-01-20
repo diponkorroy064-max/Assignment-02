@@ -58,6 +58,12 @@ body {
     display: inline-block;
 }
 
+/* ANIMATION RELATED STYLES */
+body span:hover{
+    transform: rotateX(360deg);
+    transition: 2s;
+}
+
 .header-nav {
     display: flex;
     gap: 32px;
@@ -237,6 +243,11 @@ body {
     background-color: #351165;
     border-radius: 40px;
     padding: 40px;
+}
+
+.common-why-card img:hover{
+    transform: rotateY(360deg);
+    transition: 2s ease-in-out;
 }
 
 .common-why-card h5 {
