@@ -91,7 +91,7 @@ body {
 /* hero section related styles */
 #hero {
     background-image: url('assets/hero-bg.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     /* background-color: #00FF88; */
@@ -243,6 +243,11 @@ body {
     padding: 40px;
 }
 
+.common-why-card:hover {
+    transform: translate(10px, 10px);
+    transition: ease-in-out 0.2s;
+}
+
 .common-why-card img:hover {
     transform: rotateY(360deg);
     transition: 2s ease-in-out;
@@ -310,6 +315,11 @@ body {
     flex-direction: column;
     padding: 10px;
     border-radius: 10px;
+}
+
+.common-featured-card:hover {
+    transform: translate(10px, 10px);
+    transition: ease-in-out 0.2s;
 }
 
 .common-featured-card iframe {
